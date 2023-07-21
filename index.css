@@ -19,6 +19,36 @@ nav {
   justify-content: space-between;
 }
 
+.search-container {
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+#searchButton {
+  padding: 10px 15px;
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+  background-color: #555;
+}
+
 .logo img {
   height: 40px;
   vertical-align: middle;
@@ -106,7 +136,7 @@ main {
 
 .product-card h3 {
   margin: 10px 0;
-}
+} 
 
 .product-card p {
   margin: 5px 0;

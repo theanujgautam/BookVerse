@@ -11,6 +11,12 @@
         <img src="logo.jpg" alt="BookVerse Logo">
         <h1>BookVerse</h1>
       </div>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Type here...">
+        <button type="button" id="searchButton">Search</button>
+      </div>
+
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Books</a></li>
@@ -31,7 +37,7 @@
     <h2>Featured Products</h2>
 
     <section class="product-listing">
-      <div class="product-card">
+      <div class="product-card" data-name="1984">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/517USUJAueL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" 
         alt="1984 by George Orwell">
@@ -44,7 +50,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Metamorphosis">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/61mM0EwT-KS._AC_UY218_.jpg" 
         alt="Metamorphosis by Franz Kafka">
@@ -58,7 +64,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="The Great Gatsby">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/516qPs6NcqL._AC_UY218_.jpg" 
         alt="The Great Gatsby by F.Scott Fitzgerald">
@@ -72,11 +78,11 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Frankenstein">
         <div class="product-content">
           <img src="https://images-eu.ssl-images-amazon.com/images/I/815rBf0vwHS._AC_UL160_SR160,160_.jpg" 
-        alt="Frankenstien by Mary Shelly">
-        <h3>Frankenstien</h3>
+        alt="Frankenstein by Mary Shelly">
+        <h3>Frankenstein</h3>
         <p>Mary Shelly</p>
         <p>₹510.00</p>
         <p>"Frankenstein" by Mary Shelley is a timeless Gothic novel that delves into themes of 
@@ -87,7 +93,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Atomic Habits">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UY218_.jpg" 
         alt="Atomic Habits by James Clear">
@@ -101,7 +107,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Animal Farm">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/41JbTwBhLfL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" alt="Animal Farm by George Orwell">
         <h3>Animal Farm</h3>
@@ -115,7 +121,7 @@
         
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="The Psychology of Money">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/41r6F2LRf8L._AC_UY218_.jpg" 
         alt="The Psychology of Money by Morgan Housel">
@@ -128,7 +134,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="The Picture of Dorian Gray">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/51ojsVxjIsS._SX198_BO1,204,203,200_QL40_FMwebp_.jpg"
          alt="The  picture of Dorian Gray by Oscar Wilde">
@@ -142,7 +148,7 @@
         </div>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="The Adventure of Sherlock Holmes">
         <div class="product-content">
           <img src="https://m.media-amazon.com/images/I/61Mg8tFHncL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg" 
         alt="The Adventures of Sherlock Holmes by Sir Arthur Conan Doyle">
@@ -167,5 +173,7 @@
       <p>Address: 123 Main Street, City, Country</p>
     </div>
   </footer>
+  <script src="search.js"></script>
+
 </body>
 </html>
