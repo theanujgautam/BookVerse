@@ -20,6 +20,7 @@ function FeaturedProducts() {
             price={product.price}
             image={product.image}
             description={product.description}
+            inStock={product.inStock}
           />
         ))}
       </section>

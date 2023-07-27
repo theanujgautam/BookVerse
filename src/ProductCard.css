@@ -33,3 +33,9 @@ margin-bottom: 5px;
 margin: 5px 0;
 }
 
+.sold-out-label {
+    display: block;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }

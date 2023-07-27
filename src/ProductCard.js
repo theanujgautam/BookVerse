@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductCard.css';
 
-function ProductCard({ title, author, price, image, description }) {
+function ProductCard({ title, author, price, image, description , inStock}) {
   return (
     <div className="product-card">
       <div className="product-content">
@@ -10,6 +10,7 @@ function ProductCard({ title, author, price, image, description }) {
         <p>{author}</p>
         <p>₹{price}</p>
         <p>{description}</p>
+        {inStock ? null : <span className="sold-out-label">Sold Out</span>}
       </div>
     </div>
   );
