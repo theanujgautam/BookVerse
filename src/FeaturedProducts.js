@@ -2,7 +2,12 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import productsData from './productsData';
 
-function FeaturedProducts() {
+function ProductListing({ searchText }) {
+  const filteredProducts = productsData.filter((product) =>
+    product.title.toLowerCase().includes(searchText.toLowerCase()) ||
+    product.author.toLowerCase().includes(searchText.toLowerCase())
+  );
+
   return (
     <main>
       <div className="about-website">
@@ -12,7 +17,7 @@ function FeaturedProducts() {
       <h2>Featured Products</h2>
 
       <section className="product-listing">
-      {productsData.map((product) => (
+        {filteredProducts.map((product) => (
           <ProductCard
             key={product.id}
             title={product.title}
@@ -28,4 +33,4 @@ function FeaturedProducts() {
   );
 }
 
-export default FeaturedProducts;
+export default ProductListing;

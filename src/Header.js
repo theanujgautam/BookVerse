@@ -1,7 +1,10 @@
 import React from 'react';
 
+function Header({ handleSearch }) {
+  const handleInputChange = (e) => {
+    handleSearch(e.target.value);
+  };
 
-function Header() {
   return (
     <header>
       <nav>
@@ -10,7 +13,7 @@ function Header() {
           <h1>BookVerse</h1>
         </div>
         <div className="search-container">
-          <input type="text" id="searchInput" placeholder="Search products..." />
+          <input type="text" id="searchInput" placeholder="Search book or an author..." onChange={handleInputChange} />
           <button type="button" id="searchButton">Search</button>
         </div>
         <ul>
